@@ -13,6 +13,8 @@ MVVM
 
 - List of recipes and search text field
   Api used 'Recipe by API-Ninjas' through RapidApi
+
+
   URL: https://rapidapi.com/apininjas/api/recipe-by-api-ninjas
   Documentation: https://api-ninjas.com/api/recipe
   
