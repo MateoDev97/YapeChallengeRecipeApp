@@ -1,13 +1,20 @@
 # YapeChallengeRecipeApp
 
-Language: Swift/SwiftUI
+### Language
+Swift/SwiftUI
 
-Design pattern: MVVM
+### Design pattern
+MVVM
 
-Libraries: 'GoogleMaps'
+### Libraries 
+'GoogleMaps' through Cocoapods 
 
-Features:
+### Features:
 
+- Shared Preferences
+- Drawer Menu
+- Provider
+- Dark Mode and Ligh Mode
 
 
 
