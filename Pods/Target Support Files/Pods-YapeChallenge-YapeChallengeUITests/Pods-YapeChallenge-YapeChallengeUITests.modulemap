@@ -1,0 +1,6 @@
+framework module Pods_YapeChallenge_YapeChallengeUITests {
+  umbrella header "Pods-YapeChallenge-YapeChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
