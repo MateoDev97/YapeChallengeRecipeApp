@@ -16,17 +16,19 @@ class HomeViewModel: ObservableObject {
     @Published var listRecips: [RecipeItem] = []
     
     @Published var valueQuerySearch = ""
+    
+    @Published var isLoading = false
+
 
     @Published var alertMessage = ""
     @Published var showAlert = false
-
+    
     
     func setUpViewModel() {
         if listRecips.isEmpty {
-            getRandomReceipes(query: "beef")
+            getRandomReceipes(query: "lasagna")
         }
     }
-    
     
     func showAlert(message: String) {
         alertMessage = message
@@ -34,7 +36,6 @@ class HomeViewModel: ObservableObject {
     }
     
     func searchAction() {
-        
         if valueQuerySearch.isEmpty {
             showAlert(message: "You must enter a search value")
             return
@@ -50,6 +51,8 @@ class HomeViewModel: ObservableObject {
 extension HomeViewModel {
     func getRandomReceipes(query: String) {
         
+        isLoading = true
+        
         listRecips.removeAll()
         
         let headers = ["X-RapidAPI-Key": ApiPath.API_KEY,
@@ -62,6 +65,7 @@ extension HomeViewModel {
         
         NetworkManager.shared.genericRequestCustomer(baseUrl: ApiPath.URL_SEARCH_RECEIPES, extraPath: extraPath, headers: headers, typeResponse: [RecipeItem].self)
             .sink(receiveCompletion: { [weak self] completion in
+                self?.isLoading = false
                 switch completion {
                 case .failure(let err):
                     self?.showAlert(message: err.localizedDescription)
@@ -70,6 +74,7 @@ extension HomeViewModel {
                     break
                 }
             }, receiveValue: { [weak self] responseData in
+                self?.isLoading = false
                 self?.listRecips = responseData
             })
             .store(in: &cancellables)

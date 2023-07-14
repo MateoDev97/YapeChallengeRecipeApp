@@ -6,13 +6,21 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 @main
 struct YapeChallengeApp: App {
+    
+    init() {
+        GMSServices.provideAPIKey(ApiPath.googleApiKey)
+    }
+    
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 HomeView()
+                //MapView()
             }
         }
     }
