@@ -9,9 +9,7 @@ import Foundation
 import UIKit
 
 struct K {
-        
     
-
     struct Fonts {
         static let brandHeavy = "Avenir-Heavy"
         static let brandMedium = "Avenir-Medium"

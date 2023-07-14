@@ -60,7 +60,6 @@ extension DetailViewModel {
             }, receiveValue: { [weak self] responseData in
                 self?.isLoading = false
                 
-                
                 if let firstImage = responseData.imageResults.first {
                     self?.imageRecipe = firstImage
                 } else {

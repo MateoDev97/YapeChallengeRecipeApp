@@ -58,7 +58,6 @@ extension HomeViewModel {
         let headers = ["X-RapidAPI-Key": ApiPath.API_KEY,
                        "X-RapidAPI-Host" : ApiPath.API_HOST]
         
-        
         let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? query
         
         let extraPath = "?query=\(encodedQuery)"
