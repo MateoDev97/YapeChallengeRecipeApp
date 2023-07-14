@@ -27,8 +27,8 @@ MVVM
   Json used: https://github.com/Stefie/geojson-world/blob/master/capitals.geojson?short_path=931985a
 
 ### Screen shots:
+<img width="200" alt="image" src="https://github.com/MateoDev97/YapeChallengeRecipeApp/assets/25846938/7df06b9e-b438-46c6-afeb-79d7393c0e2d">
 
-![home](https://github.com/MateoDev97/YapeChallengeRecipeApp/assets/25846938/7df06b9e-b438-46c6-afeb-79d7393c0e2d)
 
 
 
