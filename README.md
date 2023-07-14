@@ -12,8 +12,8 @@ MVVM
 ### Features:
 
 - List of recipes and search text field
-  Api used 'Recipe by API-Ninjas' through RapidApi
-  URL: https://rapidapi.com/apininjas/api/recipe-by-api-ninjas
+  Api used 'Recipe by API-Ninjas' through RapidApi <br>
+  URL: https://rapidapi.com/apininjas/api/recipe-by-api-ninjas <br>
   Documentation: https://api-ninjas.com/api/recipe
   
 - Recipe Details
