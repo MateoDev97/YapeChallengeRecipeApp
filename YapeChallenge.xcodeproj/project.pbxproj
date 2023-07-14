@@ -20,6 +20,9 @@
 		38036F872A6036F400EAF990 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38036F862A6036F400EAF990 /* HomeViewModel.swift */; };
 		38036F8A2A6038D500EAF990 /* RecipeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38036F892A6038D500EAF990 /* RecipeItem.swift */; };
 		38036F8C2A6056DE00EAF990 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38036F8B2A6056DE00EAF990 /* DetailView.swift */; };
+		6B80B254916620130A7CD9AA /* Pods_YapeChallenge_YapeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6A5E918237235CC5492459 /* Pods_YapeChallenge_YapeChallengeUITests.framework */; };
+		93637DB5691F65131897FDD2 /* Pods_YapeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57728C9C18F409A2AE228859 /* Pods_YapeChallengeTests.framework */; };
+		ADAEF98C056646DD30972001 /* Pods_YapeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E22DE059BC599559666E1 /* Pods_YapeChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,15 @@
 		38036F862A6036F400EAF990 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		38036F892A6038D500EAF990 /* RecipeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeItem.swift; sourceTree = "<group>"; };
 		38036F8B2A6056DE00EAF990 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3892B4482BC96F38063BBE4E /* Pods-YapeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YapeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-YapeChallengeTests/Pods-YapeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CEA967DE15120BF3AEA4A52 /* Pods-YapeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YapeChallenge.release.xcconfig"; path = "Target Support Files/Pods-YapeChallenge/Pods-YapeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		57728C9C18F409A2AE228859 /* Pods_YapeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YapeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70748571167F7585C93E43BD /* Pods-YapeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YapeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-YapeChallengeTests/Pods-YapeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		797E22DE059BC599559666E1 /* Pods_YapeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YapeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC5F3CE5D598EDA2A91B07F /* Pods-YapeChallenge-YapeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YapeChallenge-YapeChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-YapeChallenge-YapeChallengeUITests/Pods-YapeChallenge-YapeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E7A8E656D973ADD71D1BB41 /* Pods-YapeChallenge-YapeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YapeChallenge-YapeChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-YapeChallenge-YapeChallengeUITests/Pods-YapeChallenge-YapeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AB41FC701BCD53C5D6A0D089 /* Pods-YapeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YapeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-YapeChallenge/Pods-YapeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		DF6A5E918237235CC5492459 /* Pods_YapeChallenge_YapeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YapeChallenge_YapeChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAEF98C056646DD30972001 /* Pods_YapeChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93637DB5691F65131897FDD2 /* Pods_YapeChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B80B254916620130A7CD9AA /* Pods_YapeChallenge_YapeChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,7 @@
 				38036F692A5F240600EAF990 /* YapeChallengeUITests */,
 				38036F4D2A5F240600EAF990 /* Products */,
 				7D32F4CAEE2EC2CD24A31124 /* Pods */,
+				95742F510C64BA910023750C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,8 +213,24 @@
 		7D32F4CAEE2EC2CD24A31124 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				AB41FC701BCD53C5D6A0D089 /* Pods-YapeChallenge.debug.xcconfig */,
+				3CEA967DE15120BF3AEA4A52 /* Pods-YapeChallenge.release.xcconfig */,
+				8AC5F3CE5D598EDA2A91B07F /* Pods-YapeChallenge-YapeChallengeUITests.debug.xcconfig */,
+				8E7A8E656D973ADD71D1BB41 /* Pods-YapeChallenge-YapeChallengeUITests.release.xcconfig */,
+				3892B4482BC96F38063BBE4E /* Pods-YapeChallengeTests.debug.xcconfig */,
+				70748571167F7585C93E43BD /* Pods-YapeChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		95742F510C64BA910023750C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				797E22DE059BC599559666E1 /* Pods_YapeChallenge.framework */,
+				DF6A5E918237235CC5492459 /* Pods_YapeChallenge_YapeChallengeUITests.framework */,
+				57728C9C18F409A2AE228859 /* Pods_YapeChallengeTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38036F702A5F240600EAF990 /* Build configuration list for PBXNativeTarget "YapeChallenge" */;
 			buildPhases = (
+				EE132298DA88FE3BC9785852 /* [CP] Check Pods Manifest.lock */,
 				38036F482A5F240600EAF990 /* Sources */,
 				38036F492A5F240600EAF990 /* Frameworks */,
 				38036F4A2A5F240600EAF990 /* Resources */,
+				BB2451B54453C98ECC6006F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38036F732A5F240600EAF990 /* Build configuration list for PBXNativeTarget "YapeChallengeTests" */;
 			buildPhases = (
+				000BDCE63E5E76280C675E99 /* [CP] Check Pods Manifest.lock */,
 				38036F582A5F240600EAF990 /* Sources */,
 				38036F592A5F240600EAF990 /* Frameworks */,
 				38036F5A2A5F240600EAF990 /* Resources */,
@@ -243,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38036F762A5F240600EAF990 /* Build configuration list for PBXNativeTarget "YapeChallengeUITests" */;
 			buildPhases = (
+				F8C06A5450561177D72FC245 /* [CP] Check Pods Manifest.lock */,
 				38036F622A5F240600EAF990 /* Sources */,
 				38036F632A5F240600EAF990 /* Frameworks */,
 				38036F642A5F240600EAF990 /* Resources */,
+				FB26521C8562FBBFA6823CCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,6 +362,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		000BDCE63E5E76280C675E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YapeChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB2451B54453C98ECC6006F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YapeChallenge/Pods-YapeChallenge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YapeChallenge/Pods-YapeChallenge-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YapeChallenge/Pods-YapeChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE132298DA88FE3BC9785852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YapeChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C06A5450561177D72FC245 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YapeChallenge-YapeChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB26521C8562FBBFA6823CCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YapeChallenge-YapeChallengeUITests/Pods-YapeChallenge-YapeChallengeUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YapeChallenge-YapeChallengeUITests/Pods-YapeChallenge-YapeChallengeUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YapeChallenge-YapeChallengeUITests/Pods-YapeChallenge-YapeChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38036F482A5F240600EAF990 /* Sources */ = {
@@ -491,6 +631,7 @@
 		};
 		38036F712A5F240600EAF990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB41FC701BCD53C5D6A0D089 /* Pods-YapeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -519,6 +660,7 @@
 		};
 		38036F722A5F240600EAF990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEA967DE15120BF3AEA4A52 /* Pods-YapeChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -547,6 +689,7 @@
 		};
 		38036F742A5F240600EAF990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3892B4482BC96F38063BBE4E /* Pods-YapeChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -566,6 +709,7 @@
 		};
 		38036F752A5F240600EAF990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70748571167F7585C93E43BD /* Pods-YapeChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -585,6 +729,7 @@
 		};
 		38036F772A5F240600EAF990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC5F3CE5D598EDA2A91B07F /* Pods-YapeChallenge-YapeChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +747,7 @@
 		};
 		38036F782A5F240600EAF990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7A8E656D973ADD71D1BB41 /* Pods-YapeChallenge-YapeChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
