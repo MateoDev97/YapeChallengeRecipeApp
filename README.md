@@ -12,7 +12,7 @@ MVVM
 'GoogleMaps' through Cocoapods 
 
 ### Frameworks
-SwiftUI, Combine, URLSession
+SwiftUI, Combine, URLSession, XCTest
 
 ### Features:
 
@@ -30,6 +30,8 @@ SwiftUI, Combine, URLSession
 - Map view with custom marker <br>
   Loading random markers from location of a random city <br>
   Json used: https://github.com/Stefie/geojson-world/blob/master/capitals.geojson?short_path=931985a
+
+- Unit test for list recipes and image recipe api calls.
 
 ### Screen shots:
 <img width="200" alt="image" src="https://github.com/MateoDev97/YapeChallengeRecipeApp/assets/25846938/3d4138b0-c396-4362-8322-9b6b692508ed">
