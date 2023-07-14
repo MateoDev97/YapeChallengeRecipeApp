@@ -1,6 +1,6 @@
 # YapeChallengeRecipeApp
 
-To run please run pod install
+To run please run 'pod install'
 
 ### Language
 Swift
