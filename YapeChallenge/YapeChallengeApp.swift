@@ -12,7 +12,7 @@ import GoogleMaps
 struct YapeChallengeApp: App {
     
     init() {
-        GMSServices.provideAPIKey(ApiPath.googleApiKey)
+        GMSServices.provideAPIKey(ApiPath.API_KEY_GOOGLE)
     }
     
     
@@ -20,7 +20,6 @@ struct YapeChallengeApp: App {
         WindowGroup {
             NavigationStack {
                 HomeView()
-                //MapView()
             }
         }
     }

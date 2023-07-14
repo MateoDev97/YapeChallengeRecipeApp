@@ -30,8 +30,8 @@ class NetworkManager {
         
         var request = URLRequest(url: url)
         
-        print("Method: ", method.rawValue)
-        print("URL Request Customer: ", url)
+        //print("Method: ", method.rawValue)
+        //print("URL Request Customer: ", url)
         
         request.httpMethod = method.rawValue
         
@@ -42,14 +42,14 @@ class NetworkManager {
                     
                     let jsonData = try JSONEncoder().encode(body)
                                         
-                    print("Request Body Customer: ", String(data: jsonData, encoding: .utf8) ?? "")
+                    //print("Request Body Customer: ", String(data: jsonData, encoding: .utf8) ?? "")
                     
                     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
                     
                     request.httpBody = jsonData
                     
                 } catch {
-                    print(error.localizedDescription)
+                    //print(error.localizedDescription)
                     return Future { promise in
                         promise(.failure(NetworkError.errorEncodingRequestBody))
                     }
@@ -62,7 +62,7 @@ class NetworkManager {
                 request.setValue(value, forHTTPHeaderField: key)
             }
             
-            print("Request Headers Customer: ", headers)
+            //print("Request Headers Customer: ", headers)
         }
         
         let configuration = URLSessionConfiguration.default
@@ -84,12 +84,12 @@ class NetworkManager {
                     }
                     
                     if 200..<300 ~= httpResponse.statusCode {
-                        print("HTTP Response: ", httpResponse.statusCode)
-                        print("Response: ", String(data: data, encoding: .utf8) ?? "")
+                        //print("HTTP Response: ", httpResponse.statusCode)
+                        //print("Response: ", String(data: data, encoding: .utf8) ?? "")
                         return data
                     } else {
-                        print("Error Response: ", String(data: data, encoding: .utf8) ?? "")
-                        print("HTTP Response: ", httpResponse)
+                        //print("Error Response: ", String(data: data, encoding: .utf8) ?? "")
+                        //print("HTTP Response: ", httpResponse)
                         throw NetworkError.responseError
                     }
                 }
@@ -102,9 +102,9 @@ class NetworkManager {
                             case let urlError as URLError:
                                 promise(.failure(urlError))
                             case let decodingError as DecodingError:
-                                print(decodingError.errorDescription ?? "error")
-                                print(decodingError.localizedDescription)
-                                promise(.failure(NetworkError.decodingError))
+                                //print(decodingError.errorDescription ?? "error")
+                                //print(decodingError.localizedDescription)
+                                promise(.failure(decodingError))
                             case let apiError as NetworkError:
                                 promise(.failure(apiError))
                             default:
@@ -115,51 +115,6 @@ class NetworkManager {
                     receiveValue: { promise(.success($0)) }
                 )
                 .store(in: &self.cancellables)
-        }
-    }
-    
-    
-    func downloadFile(url: String) -> Future<Data, Error> {
-        
-        guard let url = URL(string: url) else {
-            return Future { promise in
-                promise(.failure(NetworkError.invalidURL))
-            }
-        }
-        
-        let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 60 // 60 seconds timeout
-        
-        let session = URLSession(configuration: configuration)
-        
-        return Future { promise in
-            
-            session.downloadTask(with: url) { (location, response, error) in
-                if let error = error {
-                    return promise(.failure(error))
-                }
-                
-                guard let httpResponse = response as? HTTPURLResponse else {
-                    return promise(.failure(NetworkError.responseError))
-                }
-                
-                if 200..<300 ~= httpResponse.statusCode {
-                    guard let location = location else {
-                        return promise(.failure(NetworkError.unknown))
-                    }
-                    do {
-                        let data = try Data(contentsOf: location)
-                        promise(.success(data))
-                    } catch {
-                        promise(.failure(error))
-                    }
-                } else {
-                    //print("HTTP Response: ", httpResponse)
-                    return promise(.failure(NetworkError.responseError))
-                }
-                
-                
-            }.resume()
         }
     }
     

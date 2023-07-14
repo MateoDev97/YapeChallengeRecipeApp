@@ -28,6 +28,7 @@
 		38036F992A60F3E400EAF990 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38036F982A60F3E400EAF990 /* JsonHelper.swift */; };
 		38036F9B2A60F42A00EAF990 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38036F9A2A60F42A00EAF990 /* MapViewModel.swift */; };
 		38036F9E2A60F74700EAF990 /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38036F9D2A60F74700EAF990 /* CustomMapView.swift */; };
+		38036FA02A6195DE00EAF990 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38036F9F2A6195DE00EAF990 /* Launch Screen.storyboard */; };
 		6B80B254916620130A7CD9AA /* Pods_YapeChallenge_YapeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6A5E918237235CC5492459 /* Pods_YapeChallenge_YapeChallengeUITests.framework */; };
 		93637DB5691F65131897FDD2 /* Pods_YapeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57728C9C18F409A2AE228859 /* Pods_YapeChallengeTests.framework */; };
 		ADAEF98C056646DD30972001 /* Pods_YapeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E22DE059BC599559666E1 /* Pods_YapeChallenge.framework */; };
@@ -75,6 +76,7 @@
 		38036F982A60F3E400EAF990 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		38036F9A2A60F42A00EAF990 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		38036F9D2A60F74700EAF990 /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		38036F9F2A6195DE00EAF990 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3892B4482BC96F38063BBE4E /* Pods-YapeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YapeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-YapeChallengeTests/Pods-YapeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CEA967DE15120BF3AEA4A52 /* Pods-YapeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YapeChallenge.release.xcconfig"; path = "Target Support Files/Pods-YapeChallenge/Pods-YapeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		57728C9C18F409A2AE228859 /* Pods_YapeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YapeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,15 +141,16 @@
 		38036F4E2A5F240600EAF990 /* YapeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				38036F9C2A60F73300EAF990 /* Widgets */,
-				38036F932A60F02E00EAF990 /* Resources */,
 				38036F7C2A6035F000EAF990 /* Common */,
+				38036F792A6035B900EAF990 /* Model */,
+				38036F552A5F240600EAF990 /* Preview Content */,
+				38036F932A60F02E00EAF990 /* Resources */,
 				38036F7B2A6035C900EAF990 /* View */,
 				38036F7A2A6035C000EAF990 /* ViewModel */,
-				38036F792A6035B900EAF990 /* Model */,
+				38036F9C2A60F73300EAF990 /* Widgets */,
+				38036F9F2A6195DE00EAF990 /* Launch Screen.storyboard */,
 				38036F4F2A5F240600EAF990 /* YapeChallengeApp.swift */,
 				38036F532A5F240600EAF990 /* Assets.xcassets */,
-				38036F552A5F240600EAF990 /* Preview Content */,
 			);
 			path = YapeChallenge;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 			files = (
 				38036F952A60F03900EAF990 /* capitals.json in Resources */,
 				38036F572A5F240600EAF990 /* Preview Assets.xcassets in Resources */,
+				38036FA02A6195DE00EAF990 /* Launch Screen.storyboard in Resources */,
 				38036F542A5F240600EAF990 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,8 +695,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,9 +705,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.YapeChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -720,8 +728,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -729,9 +738,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.YapeChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
