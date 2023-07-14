@@ -1,13 +1,18 @@
 # YapeChallengeRecipeApp
 
+To run please run pod install
+
 ### Language
-Swift/SwiftUI
+Swift
 
 ### Design pattern
 MVVM
 
 ### Libraries 
 'GoogleMaps' through Cocoapods 
+
+### Frameworks
+SwiftUI, Combine, URLSession
 
 ### Features:
 
