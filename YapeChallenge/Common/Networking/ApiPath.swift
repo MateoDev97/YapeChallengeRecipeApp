@@ -9,7 +9,6 @@ import Foundation
 
 class ApiPath {
     
-    
     static let API_KEY_GOOGLE = "AIzaSyBr_bxYZh7f6YFCrGlDV2G0pqzWnrY3VrM"
     static let URL_SEARCH_RECEIPES = "https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe"
     static let URL_SEARCH_IMAGES = "https://api.serpdog.io/images"
