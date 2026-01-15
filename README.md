@@ -1,7 +1,5 @@
 # YapeChallengeRecipeApp
 
-To run please run 'pod install'
-
 ### Language
 Swift
 
@@ -9,7 +7,7 @@ Swift
 MVVM
 
 ### Libraries 
-'GoogleMaps' through Cocoapods 
+'GoogleMaps' through Swift Package Manager 
 
 ### Frameworks
 SwiftUI, Combine, URLSession, XCTest
@@ -22,10 +20,9 @@ SwiftUI, Combine, URLSession, XCTest
   Documentation: https://api-ninjas.com/api/recipe
   
 - Recipe Details <br>
-  Loading images based on the name of the recipe making web scraping. <br>
-  Api used 'serpdog' <br>
-  URL: https://serpdog.io/ <br>
-  Documentation: https://docs.serpdog.io/
+  Loading images based on the name of the recipe via UNSPALSH API. <br>
+  URL: https://unsplash.com/ <br>
+  Documentation: https://unsplash.com/documentation
 
 - Map view with custom marker <br>
   Loading random markers from location of a random city <br>

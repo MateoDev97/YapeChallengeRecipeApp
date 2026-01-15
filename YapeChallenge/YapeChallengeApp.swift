@@ -12,7 +12,7 @@ import GoogleMaps
 struct YapeChallengeApp: App {
     
     init() {
-        GMSServices.provideAPIKey(ApiPath.API_KEY_GOOGLE)
+        GMSServices.provideAPIKey(K.Keys.GOOGLE_API_KEY)
     }
     
     

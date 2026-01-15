@@ -16,7 +16,7 @@ struct DetailView: View {
         
         VStack {
             
-            if let imageItem = viewModel.imageRecipe, let urlImage = URL(string: imageItem.original) {
+            if let imageItem = viewModel.imageRecipe, let urlImage = URL(string: imageItem) {
                 
                 AsyncImage(
                     url: urlImage,

@@ -55,14 +55,14 @@ extension HomeViewModel {
         
         listRecips.removeAll()
         
-        let headers = ["X-RapidAPI-Key": ApiPath.API_KEY,
-                       "X-RapidAPI-Host" : ApiPath.API_HOST]
+        let headers = ["X-RapidAPI-Key": K.Keys.API_KEY,
+                       "X-RapidAPI-Host" : K.URLs.API_HOST]
         
         let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? query
         
         let extraPath = "?query=\(encodedQuery)"
         
-        NetworkManager.shared.genericRequestCustomer(baseUrl: ApiPath.URL_SEARCH_RECEIPES, extraPath: extraPath, headers: headers, typeResponse: [RecipeItem].self)
+        NetworkManager.shared.genericRequestCustomer(baseUrl: K.URLs.URL_SEARCH_RECEIPES, extraPath: extraPath, headers: headers, typeResponse: [RecipeItem].self)
             .sink(receiveCompletion: { [weak self] completion in
                 self?.isLoading = false
                 switch completion {
